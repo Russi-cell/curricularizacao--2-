@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brusque Kids - Jogo Educativo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button id="btn-mudo" class="btn-som" type="button" aria-label="Ligar ou desligar o som">🔊</button>
+
+  <main id="app">
+
+    <!-- TELA 1: INICIAL -->
+    <section id="tela-inicial" class="tela ativa">
+      <p class="faixa">Aprender brincando, crescer explorando!</p>
+      <h1 class="logo">Brusque <span>Kids</span></h1>
+      <p class="sub">★ Jogo Educativo ★</p>
+      <div class="mascotes" aria-hidden="true">🐦 🦫 🐒</div>
+
+      <label for="nome" class="rotulo">Qual é o seu nome? (se quiser)</label>
+      <input id="nome" type="text" maxlength="20" autocomplete="off" placeholder="Digite seu nome aqui">
+
+      <button id="btn-jogar" class="btn verde grande" type="button">Vamos jogar!</button>
+      <button id="btn-ranking" class="btn azul" type="button">🏆 Ver ranking</button>
+    </section>
+
+    <!-- TELA 2: DIFICULDADE -->
+    <section id="tela-nivel" class="tela">
+      <h2 class="titulo-tela">Escolha o nível</h2>
+      <button class="btn verde grande btn-nivel" type="button" data-nivel="facil">Fácil <span class="estrelas">⭐</span></button>
+      <button class="btn amarelo grande btn-nivel" type="button" data-nivel="medio">Médio <span class="estrelas">⭐⭐</span></button>
+      <button class="btn vermelho grande btn-nivel" type="button" data-nivel="dificil">Difícil <span class="estrelas">⭐⭐⭐</span></button>
+      <button id="btn-voltar-nivel" class="btn azul" type="button">⬅ Voltar</button>
+    </section>
+
+    <!-- TELA 3: PERGUNTA -->
+    <section id="tela-pergunta" class="tela">
+      <div class="topo-pergunta">
+        <span id="progresso">Pergunta 1 de 10</span>
+        <span id="pontos">⭐ 0</span>
+      </div>
+
+      <div class="cartao">
+        <h2 id="pergunta-texto" aria-live="polite"></h2>
+        <div id="visual" class="visual"></div>
+
+        <div class="linha-botoes">
+          <button id="btn-ouvir" class="btn azul" type="button">🔊 Ouvir pergunta</button>
+          <button id="btn-som" class="btn amarelo" type="button" hidden>🎵 Ouvir o som</button>
+        </div>
+
+        <p id="dica" class="dica" hidden>👆 Arraste a resposta até a imagem (ou toque nela)</p>
+        <div id="alternativas" class="alternativas"></div>
+      </div>
+    </section>
+
+    <!-- TELA 4: FEEDBACK (certo / errado) -->
+    <section id="tela-feedback" class="tela">
+      <div id="fb-card" class="cartao feedback">
+        <div id="fb-icone" class="fb-icone" aria-hidden="true">✅</div>
+        <h2 id="fb-titulo">Muito bem!</h2>
+        <p id="fb-certa" class="fb-certa" hidden></p>
+        <p id="fb-explicacao" class="fb-explicacao"></p>
+        <div class="mascote-fb" aria-hidden="true">🐦</div>
+        <button id="btn-proxima" class="btn azul grande" type="button">Próxima pergunta ➜</button>
+      </div>
+    </section>
+
+    <!-- TELA 5: FIM DO JOGO -->
+    <section id="tela-final" class="tela">
+      <div class="cartao final">
+        <h2>Fim do Jogo!</h2>
+        <p id="final-titulo" class="final-titulo">Parabéns!</p>
+        <div id="final-estrelas" class="final-estrelas" aria-hidden="true">⭐⭐⭐</div>
+        <p id="final-placar" class="final-placar"></p>
+        <p id="final-msg" class="final-msg"></p>
+
+        <h3 class="sub-titulo">🏆 Ranking</h3>
+        <ol id="lista-ranking-final" class="ranking"></ol>
+
+        <div class="linha-botoes">
+          <button id="btn-de-novo" class="btn verde" type="button">↻ Jogar novamente</button>
+          <button id="btn-inicio" class="btn azul" type="button">🏠 Voltar ao início</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TELA 6: RANKING -->
+    <section id="tela-ranking" class="tela">
+      <div class="cartao final">
+        <h2>🏆 Ranking</h2>
+        <ol id="lista-ranking" class="ranking"></ol>
+        <button id="btn-ranking-voltar" class="btn azul" type="button">⬅ Voltar</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

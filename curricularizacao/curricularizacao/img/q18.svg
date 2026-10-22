@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="800" height="600">
+<defs>
+<linearGradient id="c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fcbff"/><stop offset="1" stop-color="#e6f7ff"/></linearGradient>
+<radialGradient id="s" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff6b0"/><stop offset="1" stop-color="#fff6b0" stop-opacity="0"/></radialGradient>
+<linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a8e07a"/><stop offset="1" stop-color="#7fcf5f"/></linearGradient>
+<linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6cc24f"/><stop offset="1" stop-color="#4fae45"/></linearGradient>
+</defs>
+<rect width="400" height="300" fill="url(#c)"/>
+<circle cx="335" cy="52" r="60" fill="url(#s)"/><circle cx="335" cy="52" r="24" fill="#ffd93b"/>
+<g fill="#fff"><ellipse cx="70" cy="48" rx="34" ry="10"/><ellipse cx="92" cy="40" rx="22" ry="11"/><ellipse cx="200" cy="30" rx="26" ry="8"/><ellipse cx="218" cy="25" rx="16" ry="8"/></g>
+<path d="M0 150 Q80 105 170 140 T400 125 V300 H0Z" fill="url(#g1)"/>
+<path d="M0 185 Q120 150 230 180 T400 170 V300 H0Z" fill="url(#g2)"/>
+<!-- plantação -->
+<g stroke="#e8c23a" stroke-width="3" stroke-linecap="round" opacity=".9"><path d="M262 232h110M250 244h135M238 256h160M226 268h174"/></g>
+<!-- celeiro -->
+<rect x="95" y="140" width="130" height="92" fill="#d9453b"/>
+<path d="M85 145 112 104H208L235 145Z" fill="#8f2f2a"/>
+<rect x="147" y="118" width="26" height="20" fill="#fff" stroke="#8f2f2a" stroke-width="3"/><path d="M147 128h26M160 118v20" stroke="#8f2f2a" stroke-width="2"/>
+<rect x="132" y="170" width="56" height="62" fill="#fff" stroke="#8f2f2a" stroke-width="4"/>
+<path d="M132 170 188 232M188 170 132 232M160 170v62" stroke="#d9453b" stroke-width="4"/>
+<path d="M95 140h130" stroke="#fff" stroke-width="3" opacity=".6"/>
+<!-- silo -->
+<rect x="236" y="116" width="36" height="116" fill="#d5dde2"/><path d="M236 116a18 18 0 0 1 36 0Z" fill="#9aa8b1"/>
+<path d="M236 140h36M236 166h36M236 192h36M236 216h36" stroke="#b3bfc7" stroke-width="3"/>
+<!-- cerca -->
+<g fill="#a9703e"><rect x="8" y="196" width="8" height="44"/><rect x="48" y="196" width="8" height="44"/><rect x="88" y="206" width="8" height="34"/></g>
+<g stroke="#bf8449" stroke-width="5" stroke-linecap="round"><path d="M4 208H95M4 226H95"/></g>
+<!-- árvores -->
+<rect x="346" y="150" width="10" height="46" rx="4" fill="#a9703e"/><circle cx="351" cy="136" r="28" fill="#3f9e3f"/><circle cx="340" cy="128" r="12" fill="#58b552" opacity=".7"/>
+<rect x="30" y="140" width="8" height="40" rx="3" fill="#a9703e"/><circle cx="34" cy="128" r="22" fill="#3f9e3f"/><circle cx="26" cy="122" r="9" fill="#58b552" opacity=".7"/>
+<!-- fardos de feno -->
+<g><circle cx="318" cy="262" r="20" fill="#f2cf5a"/><circle cx="318" cy="262" r="13" fill="none" stroke="#d9a92c" stroke-width="3"/><circle cx="318" cy="262" r="6" fill="none" stroke="#d9a92c" stroke-width="3"/></g>
+<g><circle cx="40" cy="268" r="16" fill="#f2cf5a"/><circle cx="40" cy="268" r="10" fill="none" stroke="#d9a92c" stroke-width="3"/><circle cx="40" cy="268" r="4" fill="none" stroke="#d9a92c" stroke-width="3"/></g>
+<!-- caminho -->
+<path d="M130 232 Q150 262 120 300H200Q190 260 175 232Z" fill="#f0dcae"/>
+<!-- flores -->
+<g><circle cx="215" cy="266" r="4" fill="#ff8fa3"/><circle cx="240" cy="284" r="4" fill="#fff"/><circle cx="85" cy="262" r="4" fill="#ffd93b"/><circle cx="270" cy="290" r="4" fill="#ff8fa3"/></g>
+</svg>
